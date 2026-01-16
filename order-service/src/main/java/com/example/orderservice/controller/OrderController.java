@@ -19,12 +19,10 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-
         Order savedOrder = orderService.createOrder(
                 order.getProduct(),
                 order.getQuantity()
         );
-
         return new ResponseEntity<>(savedOrder, HttpStatus.CREATED);
     }
 }

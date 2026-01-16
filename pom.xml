@@ -38,6 +38,11 @@
     <modules>
         <module>config-server</module>
         <module>service-registry</module>
+        <module>api-gateway</module>
+        <module>user-service</module>
+        <module>order-service</module>
+        <module>inventory-service</module>
+        <module>payment-service</module>
     </modules>
 
 </project>
